@@ -14,9 +14,8 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
-  const currentLanguage = languages.find(
-    (lang) => lang.code === router.locale
-  ) || languages[0];
+  const currentLanguage =
+    languages.find((lang) => lang.code === router.locale) || languages[0];
 
   const handleLanguageChange = (locale: string) => {
     const { pathname, asPath, query } = router;
@@ -39,12 +38,12 @@ export default function LanguageSwitcher() {
       </Button>
 
       {isOpen && (
-        <div className="absolute right-0 z-50 mt-2 bg-white border border-gray-200 rounded-md shadow-lg min-w-[120px]">
+        <div className="absolute right-0 z-50 mt-2 min-w-[120px] rounded-md border border-gray-200 bg-white shadow-lg">
           {languages.map((language) => (
             <button
               key={language.code}
               onClick={() => handleLanguageChange(language.code)}
-              className={`w-full px-4 py-2 text-left hover:bg-gray-50 flex items-center space-x-2 ${
+              className={`flex w-full items-center space-x-2 px-4 py-2 text-left hover:bg-gray-50 ${
                 language.code === router.locale
                   ? "bg-blue-50 text-blue-600"
                   : "text-gray-700"
@@ -59,10 +58,7 @@ export default function LanguageSwitcher() {
 
       {/* 点击外部关闭下拉菜单 */}
       {isOpen && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setIsOpen(false)}
-        />
+        <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
       )}
     </div>
   );
