@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "~/components/ui";
 import { useState } from "react";
-import { useTranslation } from "~/hooks/useTranslation";
+import { useTranslation } from "~/components/LanguageProvider";
 import {
   GlobeIcon,
   ChevronDownIcon,
@@ -93,7 +93,10 @@ function BlogCard({
   onClick: () => void;
 }) {
   return (
-    <div className="p-6 transition-shadow bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow-md" onClick={onClick}>
+    <div
+      className="p-6 transition-shadow bg-white border border-gray-200 rounded-lg cursor-pointer hover:shadow-md"
+      onClick={onClick}
+    >
       <div className="mb-4">
         <span className="inline-block px-3 py-1 mb-3 text-xs font-medium text-blue-600 bg-blue-100 rounded-full">
           {category}
@@ -103,7 +106,7 @@ function BlogCard({
         </h3>
         <p className="leading-relaxed text-gray-600">{excerpt}</p>
       </div>
-      
+
       <div className="flex items-center justify-between text-sm text-gray-500">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-1">
@@ -205,8 +208,10 @@ export default function BlogPage() {
   ];
 
   const filteredPosts = blogPosts.filter((post) => {
-    const matchesCategory = selectedCategory === "all" || post.categoryKey === selectedCategory;
-    const matchesSearch = searchQuery === "" || 
+    const matchesCategory =
+      selectedCategory === "all" || post.categoryKey === selectedCategory;
+    const matchesSearch =
+      searchQuery === "" ||
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
@@ -266,13 +271,13 @@ export default function BlogPage() {
           <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
             {/* 搜索框 */}
             <div className="relative max-w-md">
-              <SearchIcon className="absolute w-4 h-4 text-gray-400 transform -translate-y-1/2 left-3 top-1/2" />
+              <SearchIcon className="absolute w-4 h-4 text-gray-400 transform -translate-y-1/2 top-1/2 left-3" />
               <input
                 type="text"
                 placeholder={t("blog.searchPlaceholder")}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full py-2 pl-10 pr-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full py-2 pl-10 pr-4 border border-gray-300 rounded-md focus:border-transparent focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
             </div>
 
@@ -282,10 +287,10 @@ export default function BlogPage() {
                 <button
                   key={category.key}
                   onClick={() => setSelectedCategory(category.key)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                     selectedCategory === category.key
                       ? "bg-blue-600 text-white"
-                      : "bg-white text-gray-600 border border-gray-300 hover:bg-gray-50"
+                      : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-50"
                   }`}
                 >
                   {category.label}

@@ -1,9 +1,20 @@
-import { useState, useEffect } from 'react';
+"use client";
+
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import Cookies from 'js-cookie';
 
 type TranslationKey = string;
 type TranslationValue = string | Record<string, any>;
 type Translations = Record<string, TranslationValue>;
+
+interface LanguageContextType {
+  locale: string;
+  t: (key: TranslationKey) => string;
+  changeLanguage: (newLocale: string) => Promise<void>;
+  isLoading: boolean;
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 const translations: Record<string, Translations> = {
   zh: {},
@@ -40,7 +51,7 @@ const getInitialLocale = (): string => {
 const loadTranslations = async (locale: string): Promise<Translations> => {
   try {
     const response = await fetch(`/locales/${locale}/common.json`);
-    const data = await response.json();
+    const data = await response.json() as Translations;
     translations[locale] = data;
     return data;
   } catch (error) {
@@ -49,8 +60,13 @@ const loadTranslations = async (locale: string): Promise<Translations> => {
   }
 };
 
-export const useTranslation = () => {
-  const [locale, setLocale] = useState<string>(getInitialLocale);
+interface LanguageProviderProps {
+  children: ReactNode;
+  initialLocale?: string;
+}
+
+export function LanguageProvider({ children, initialLocale }: LanguageProviderProps) {
+  const [locale, setLocale] = useState<string>(initialLocale || getInitialLocale);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -60,7 +76,7 @@ export const useTranslation = () => {
       setIsLoading(false);
     };
     
-    initTranslations();
+    void initTranslations();
   }, [locale]);
 
   const t = (key: TranslationKey): string => {
@@ -96,10 +112,24 @@ export const useTranslation = () => {
     }
   };
 
-  return {
-    t,
+  const value: LanguageContextType = {
     locale,
+    t,
     changeLanguage,
     isLoading
   };
+
+  return (
+    <LanguageContext.Provider value={value}>
+      {children}
+    </LanguageContext.Provider>
+  );
+}
+
+export const useTranslation = () => {
+  const context = useContext(LanguageContext);
+  if (context === undefined) {
+    throw new Error('useTranslation must be used within a LanguageProvider');
+  }
+  return context;
 };

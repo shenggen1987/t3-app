@@ -10,7 +10,7 @@ import {
   ChevronDownIcon,
 } from "lucide-react";
 import { useState } from "react";
-import { useTranslation } from "~/hooks/useTranslation";
+import { useTranslation } from "~/components/LanguageProvider";
 
 const languages = [
   { code: "zh", name: "中文", flag: "🇨🇳" },

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "~/components/ui";
 import { useState } from "react";
-import { useTranslation } from "~/hooks/useTranslation";
+import { useTranslation } from "~/components/LanguageProvider";
 import {
   GlobeIcon,
   ChevronDownIcon,
