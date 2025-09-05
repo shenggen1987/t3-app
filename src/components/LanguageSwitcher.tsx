@@ -14,12 +14,13 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
-  const currentLanguage =
-    languages.find((lang) => lang.code === router.locale) || languages[0];
+  const currentLanguage = (languages.find(
+    (lang) => lang.code === router.locale,
+  ) ?? languages[0])!;
 
-  const handleLanguageChange = (locale: string) => {
+  const handleLanguageChange = async (locale: string) => {
     const { pathname, asPath, query } = router;
-    router.push({ pathname, query }, asPath, { locale });
+    await router.push({ pathname, query }, asPath, { locale });
     setIsOpen(false);
   };
 
