@@ -149,7 +149,7 @@ export default function AboutPage() {
             <Link href="/writing" className="text-gray-600 hover:text-gray-900">
               {t("nav.writing")}
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900">
+            <Link href="/blog" className="text-gray-600 hover:text-gray-900">
               {t("nav.blog")}
             </Link>
             <Link href="/about" className="font-medium text-blue-600">

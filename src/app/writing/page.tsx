@@ -163,13 +163,13 @@ export default function WritingPage() {
             <Link href="/writing" className="font-medium text-blue-600">
               {t("nav.writing")}
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900">
+            <Link href="/blog" className="text-gray-600 hover:text-gray-900">
               {t("nav.blog")}
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900">
+            <Link href="/about" className="text-gray-600 hover:text-gray-900">
               {t("nav.about")}
             </Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900">
+            <Link href="/history" className="text-gray-600 hover:text-gray-900">
               {t("nav.history")}
             </Link>
           </div>
