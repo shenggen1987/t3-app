@@ -10,8 +10,6 @@ const config = {
     defaultLocale: "zh",
     locales: ["zh", "en"],
   },
-  reactStrictMode: true,
-  eslint: { ignoreDuringBuilds: true },
 };
 
 export default config;

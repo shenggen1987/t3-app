@@ -1,10 +1,19 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
-import Cookies from 'js-cookie';
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  type ReactNode,
+} from "react";
+import Cookies from "js-cookie";
 
 type TranslationKey = string;
-type TranslationValue = string | Record<string, any>;
+interface TranslationObject {
+  [key: string]: string | TranslationObject;
+}
+type TranslationValue = string | TranslationObject;
 type Translations = Record<string, TranslationValue>;
 
 interface LanguageContextType {
@@ -14,36 +23,38 @@ interface LanguageContextType {
   isLoading: boolean;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined,
+);
 
 const translations: Record<string, Translations> = {
   zh: {},
-  en: {}
+  en: {},
 };
 
-const LOCALE_COOKIE_NAME = 'locale';
-const DEFAULT_LOCALE = 'zh';
+const LOCALE_COOKIE_NAME = "locale";
+const DEFAULT_LOCALE = "zh";
 
 // 获取初始语言设置
 const getInitialLocale = (): string => {
-  if (typeof window === 'undefined') {
+  if (typeof window === "undefined") {
     return DEFAULT_LOCALE;
   }
-  
+
   // 从cookies读取语言设置
   const savedLocale = Cookies.get(LOCALE_COOKIE_NAME);
-  if (savedLocale && (savedLocale === 'zh' || savedLocale === 'en')) {
+  if (savedLocale && (savedLocale === "zh" || savedLocale === "en")) {
     return savedLocale;
   }
-  
+
   // 如果没有保存的语言设置，尝试从浏览器语言检测
   const browserLang = navigator.language.toLowerCase();
-  if (browserLang.startsWith('zh')) {
-    return 'zh';
-  } else if (browserLang.startsWith('en')) {
-    return 'en';
+  if (browserLang.startsWith("zh")) {
+    return "zh";
+  } else if (browserLang.startsWith("en")) {
+    return "en";
   }
-  
+
   return DEFAULT_LOCALE;
 };
 
@@ -51,7 +62,7 @@ const getInitialLocale = (): string => {
 const loadTranslations = async (locale: string): Promise<Translations> => {
   try {
     const response = await fetch(`/locales/${locale}/common.json`);
-    const data = await response.json() as Translations;
+    const data = (await response.json()) as Translations;
     translations[locale] = data;
     return data;
   } catch (error) {
@@ -65,8 +76,13 @@ interface LanguageProviderProps {
   initialLocale?: string;
 }
 
-export function LanguageProvider({ children, initialLocale }: LanguageProviderProps) {
-  const [locale, setLocale] = useState<string>(initialLocale || getInitialLocale);
+export function LanguageProvider({
+  children,
+  initialLocale,
+}: LanguageProviderProps) {
+  const [locale, setLocale] = useState<string>(
+    initialLocale ?? getInitialLocale(),
+  );
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -75,25 +91,27 @@ export function LanguageProvider({ children, initialLocale }: LanguageProviderPr
       await loadTranslations(locale);
       setIsLoading(false);
     };
-    
-    void initTranslations();
+
+    initTranslations().catch(() => {
+      setIsLoading(false);
+    });
   }, [locale]);
 
   const t = (key: TranslationKey): string => {
     if (isLoading) return key;
-    
-    const keys = key.split('.');
-    let value: any = translations[locale];
-    
+
+    const keys = key.split(".");
+    let value: TranslationValue = translations[locale] ?? {};
+
     for (const k of keys) {
-      if (value && typeof value === 'object' && k in value) {
-        value = value[k];
+      if (value && typeof value === "object" && k in value) {
+        value = (value as Record<string, TranslationValue>)[k]!;
       } else {
         return key; // 返回原始 key 如果找不到翻译
       }
     }
-    
-    return typeof value === 'string' ? value : key;
+
+    return typeof value === "string" ? value : key;
   };
 
   const changeLanguage = async (newLocale: string) => {
@@ -101,13 +119,13 @@ export function LanguageProvider({ children, initialLocale }: LanguageProviderPr
       setIsLoading(true);
       await loadTranslations(newLocale);
       setLocale(newLocale);
-      
+
       // 保存语言设置到cookies
-      Cookies.set(LOCALE_COOKIE_NAME, newLocale, { 
+      Cookies.set(LOCALE_COOKIE_NAME, newLocale, {
         expires: 365, // 保存一年
-        sameSite: 'lax' 
+        sameSite: "lax",
       });
-      
+
       setIsLoading(false);
     }
   };
@@ -116,7 +134,7 @@ export function LanguageProvider({ children, initialLocale }: LanguageProviderPr
     locale,
     t,
     changeLanguage,
-    isLoading
+    isLoading,
   };
 
   return (
@@ -129,7 +147,7 @@ export function LanguageProvider({ children, initialLocale }: LanguageProviderPr
 export const useTranslation = () => {
   const context = useContext(LanguageContext);
   if (context === undefined) {
-    throw new Error('useTranslation must be used within a LanguageProvider');
+    throw new Error("useTranslation must be used within a LanguageProvider");
   }
   return context;
 };
