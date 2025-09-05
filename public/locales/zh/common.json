@@ -1,0 +1,406 @@
+{
+  "nav": {
+    "home": "首页",
+    "writing": "写作",
+    "blog": "博客",
+    "about": "关于",
+    "history": "历史",
+    "login": "登录",
+    "register": "注册"
+  },
+  "hero": {
+    "title": "Submit-ready",
+    "subtitle": "not just generated",
+    "description": "获得可提交的草稿，能够与白名单系统配合使用，打包的证据包，以及易于使用的编辑功能——让您可以自信地提交，而不是焦虑地提交。",
+    "cta": "立即开始提交"
+  },
+  "comparison": {
+    "title": "为什么\"能写\"≠\"准备提交\"",
+    "problems": {
+      "citations": {
+        "title": "引用检查不通过",
+        "desc": "AI生成的引用引用了不存在的论文"
+      },
+      "style": {
+        "title": "风格匹配良好",
+        "desc": "生成的文本不符合学术写作惯例"
+      },
+      "obvious": {
+        "title": "明显的AI生成",
+        "desc": "内容显示出明显的AI生成迹象"
+      },
+      "formatting": {
+        "title": "缺乏真正的格式化风格",
+        "desc": "缺少适当的学术格式和结构"
+      },
+      "iterations": {
+        "title": "迭代缓慢如煤",
+        "desc": "修订耗时太长且缺乏一致性"
+      }
+    },
+    "solutions": {
+      "citations": {
+        "title": "真实文献引用",
+        "desc": "来自学术数据库的真实、可验证的引用"
+      },
+      "alignment": {
+        "title": "人性化输出对齐",
+        "desc": "读起来自然且专业的内容"
+      },
+      "detection": {
+        "title": "AI检测规避",
+        "desc": "设计用于通过AI检测工具的内容"
+      },
+      "formatting": {
+        "title": "按需格式化",
+        "desc": "自动应用适当的学术格式"
+      },
+      "pricing": {
+        "title": "透明定价",
+        "desc": "清晰、预付费定价，无隐藏费用"
+      }
+    }
+  },
+  "features": {
+    "title": "一键开环，从\"生成\"到\"可提\"",
+    "realLiterature": {
+      "title": "真实文献",
+      "desc": "基于真实学术数据库的文献引用"
+    },
+    "humanStyle": {
+      "title": "人文风格",
+      "desc": "符合学术写作规范的自然表达"
+    },
+    "smartDetection": {
+      "title": "智能检测",
+      "desc": "通过主流AI检测工具的内容优化"
+    },
+    "aiAgent": {
+      "title": "AI Agent 辅助",
+      "desc": "智能助手协助完成写作全流程"
+    }
+  },
+  "fastPolished": {
+    "title": "快速且精致",
+    "description": "学术写作不应该花费数周时间。在几分钟内获得可提交的草稿，而不是几小时。遵循结构化工作流程，使用AI加速从研究到最终格式化的每一步。",
+    "benefits": {
+      "outline": "从大纲或主题开始",
+      "draft": "在10分钟内获得初稿",
+      "iterate": "通过AI辅助进行迭代和完善",
+      "export": "以多种格式导出"
+    }
+  },
+  "betterValue": {
+    "title": "更好的价值",
+    "description": "学术写作服务很昂贵。一篇好的论文可能花费500美元以上，需要数周的来回修订。",
+    "benefits": {
+      "payOnce": "一次付费，永久使用 - 无订阅",
+      "unlimited": "无限修订和格式化",
+      "noWaiting": "无需等待人工写手",
+      "ownership": "完全拥有您的作品"
+    }
+  },
+  "academicSafe": {
+    "title": "学术安全设计",
+    "description": "学术诚信要求各不相同，但所有机构都要求诚实和遵守其政策。",
+    "features": {
+      "compliance": {
+        "title": "支持学术学校、大学的完全合规",
+        "desc": "旨在满足机构要求"
+      },
+      "transparent": {
+        "title": "对AI辅助透明",
+        "desc": "清晰记录AI工具使用情况"
+      },
+      "learning": {
+        "title": "为学习而设计，而非作弊",
+        "desc": "增强理解的工具"
+      },
+      "audit": {
+        "title": "提供完整的审计跟踪供审查",
+        "desc": "完整的更改和来源历史"
+      },
+      "original": {
+        "title": "鼓励原创思考",
+        "desc": "促进批判性思维和分析"
+      },
+      "ethical": {
+        "title": "遵循道德AI使用的最佳实践",
+        "desc": "负责任的AI实施"
+      }
+    }
+  },
+  "steps": {
+    "title": "三步走，提交更轻松",
+    "step1": {
+      "title": "快速生成草稿",
+      "desc": "输入主题或大纲，快速生成"
+    },
+    "step2": {
+      "title": "智能优化内容",
+      "desc": "AI 助手协助优化和完善内容"
+    },
+    "step3": {
+      "title": "Agent辅助导出",
+      "desc": "多格式导出，准备提交"
+    },
+    "cta": "开始使用"
+  },
+  "feedback": {
+    "title": "用户反馈",
+    "user1": {
+      "name": "张同学",
+      "school": "北京大学",
+      "comment": "使用CodePass完成了我的毕业论文，真的很棒！不仅节省了大量时间，而且质量很高。"
+    },
+    "user2": {
+      "name": "李教授",
+      "school": "清华大学",
+      "comment": "作为导师，我很欣赏这个工具对学术诚信的重视，帮助学生更好地完成学术写作。"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": {
+      "question": "CodePass是否符合学术诚信要求？",
+      "answer": "是的，我们严格遵循学术诚信原则，提供透明的AI辅助工具，帮助学生提高写作质量而不是代替思考。"
+    },
+    "q2": {
+      "question": "生成的内容能通过AI检测吗？",
+      "answer": "我们的系统经过特殊优化，生成的内容具有自然的人文风格，能够通过主流的AI检测工具。"
+    },
+    "q3": {
+      "question": "支持哪些学科领域？",
+      "answer": "目前支持文科、理科、工科等多个学科领域，包括但不限于计算机科学、经济学、文学等。"
+    }
+  },
+  "comparison_table": {
+    "title": "功能对比",
+    "features": {
+      "realCitations": "真实文献引用",
+      "aiDetection": "AI检测规避",
+      "formatting": "学术格式化",
+      "humanReview": "人工审核"
+    },
+    "traditional": "传统AI工具",
+    "codepass": "CodePass"
+  },
+  "cta": {
+    "title": "开始你的学术写作之旅",
+    "description": "加入数千名学生和研究者，体验更高效的学术写作方式",
+    "freeTrial": "免费试用",
+    "viewPricing": "查看定价"
+  },
+  "footer": {
+    "description": "让学术写作更简单、更高效、更可靠",
+    "product": "产品",
+    "resources": "资源",
+    "contact": "联系我们",
+    "support": "支持",
+    "feedback": "反馈",
+    "docs": "文档",
+    "blog": "博客",
+    "copyright": "© 2024 CodePass. All rights reserved."
+  },
+  "writing": {
+    "title": "Guaranteed Academic Paper, Worry-Free Pass",
+    "features": {
+      "proQuality": "Pro quality",
+      "verifiedSources": "Verified sources",
+      "chartsEquations": "Charts/Equations",
+      "agentEdits": "Agent edits"
+    },
+    "paperTypes": {
+      "essay": "Essay",
+      "academicEssay": "Academic Essay",
+      "researchPaper": "Research Paper",
+      "caseStudy": "Case Study",
+      "literatureReview": "Literature Review",
+      "analyticalEssay": "Analytical Essay",
+      "compareContrast": "Compare & Contrast Essay",
+      "criticalEssay": "Critical Essay",
+      "argumentativeEssay": "Argumentative Essay",
+      "assignment": "Assignment",
+      "presentationSlides": "Presentation Slides"
+    },
+    "form": {
+      "topic": "Topic",
+      "topicPlaceholder": "Assignment's topic or name",
+      "academicLevel": "Academic level",
+      "levels": {
+        "college": "College",
+        "bachelors": "Bachelor's",
+        "masters": "Master's",
+        "doctorate": "Doctorate"
+      },
+      "wordCount": "Word Count",
+      "language": "Language",
+      "languages": {
+        "englishUS": "English(US)",
+        "englishUK": "English(UK)",
+        "spanish": "Spanish",
+        "chinese": "Chinese"
+      },
+      "requirements": "Requirements",
+      "requirementsPlaceholder": "Enter your specific writing requirements to help improve the paper quality",
+      "writingMode": "Writing Mode",
+      "oneClickWriting": "One-Click Writing",
+      "oneClickDesc": "Generate complete document automatically",
+      "stepByStep": "Step-by-step",
+      "stepByStepDesc": "Work step-by-step with AI guidance",
+      "citationStyle": "Citation Style",
+      "figuresEquations": "Figures & Equations",
+      "includeCharts": "Include Charts&Tables",
+      "includeFormulas": "Include Formulas",
+      "personalVoice": "Personal Voice",
+      "personalVoicePlaceholder": "给我不少于1000字",
+      "start": "start",
+      "support": "Support",
+      "restart": "重新开始/Restart",
+      "continue": "继续写作/Start"
+    }
+  },
+  "history": {
+    "title": "Writing History",
+    "noHistory": "暂无写作历史",
+    "items": {
+      "pigFarming": {
+        "title": "The Application of AI in the Pig Farming Industry",
+        "type": "Essay",
+        "citation": "APA",
+        "language": "English(US)",
+        "words": "2000 words",
+        "created": "Created2025/8/28 08:20",
+        "id": "ID:123456789",
+        "status": "Step-by-Step"
+      },
+      "coalMaterials": {
+        "title": "Coal Materials in Hunan Region: Market Analysis",
+        "type": "Essay",
+        "citation": "APA",
+        "language": "English(US)",
+        "words": "1800 words",
+        "created": "Created2025/8/26 09:30",
+        "id": "ID:123456788",
+        "status": "One-click"
+      },
+      "digitalLiteracy": {
+        "title": "Digital Literacy and First-year Outcomes",
+        "type": "Essay",
+        "citation": "MLA",
+        "language": "English(US)",
+        "words": "2100 words",
+        "created": "Created2025/8/25 17:30",
+        "id": "ID:123456789",
+        "status": "Step-by-Step"
+      }
+    },
+    "actions": {
+      "openDraft": "Open draft",
+      "downloadBundle": "Download Bundle",
+      "continueWriting": "Continue Writing"
+    },
+    "service": "客服"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "了解我们的故事",
+    "features": {
+      "title": "产品特色",
+      "aiGuide": {
+        "title": "我们的AI导师:",
+        "description": "基于个人知识文档的AI导师，思维导图、翻译、摘要，聚焦文档文档学习，让知识的学习、管理变得轻松简单。"
+      },
+      "smartWriting": {
+        "title": "初稿写作:",
+        "description": "几分钟搞定方案、格式规范、内容专业。上百种写作应用模板，支持基于个人知识库的个性化写作，AI让文案写作开创新。"
+      },
+      "verification": {
+        "title": "检查验证:",
+        "description": "实现联网搜索个人知识库搜索，满足各类场景的知识获取和资料检索需求，实现AI回答的准确性和个性化。"
+      },
+      "dataGuide": {
+        "title": "资讯导读:",
+        "description": "自动抓取当日重点新闻内容，AI总结+摘文案等，支持摘录其一键添加到个人知识库，基于知识库的个性化摘录，让你不错过每一条有价值信息。"
+      }
+    },
+    "team": {
+      "title": "我们的团队",
+      "description": "团队毕业于北大等知名高校，来自阿里、京东等一线互联网大厂，具备业内领先的算法能力、产品能力、研发实力，已获得千万级天使轮投资。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "businessCooperation": "商务合作: baochenlan@starringshop.com",
+      "customerService": "联系电话: 021-67734090",
+      "officeAddress": "公司地址: 上海市虹口区吴淞路315号24号1-3层"
+    },
+    "legal": {
+      "icp": "沪ICP备20240491338-1",
+      "publicSecurity": "沪公网安备: 31010402333814号"
+    }
+  },
+  "blog": {
+    "title": "博客",
+    "subtitle": "最新资讯与见解",
+    "categories": {
+      "all": "全部",
+      "aiWriting": "AI写作",
+      "academicTips": "学术技巧",
+      "productUpdates": "产品更新",
+      "tutorials": "教程指南"
+    },
+    "posts": {
+      "aiRevolution": {
+        "title": "AI写作革命：如何改变学术写作的未来",
+        "excerpt": "探索人工智能如何重塑学术写作领域，从传统方法到智能化解决方案的转变。",
+        "date": "2024年12月15日",
+        "readTime": "5分钟阅读",
+        "category": "AI写作",
+        "author": "张教授"
+      },
+      "citationGuide": {
+        "title": "完美引用指南：APA、MLA、Chicago格式详解",
+        "excerpt": "掌握学术写作中最重要的引用格式，确保你的论文符合学术标准。",
+        "date": "2024年12月10日",
+        "readTime": "8分钟阅读",
+        "category": "学术技巧",
+        "author": "李博士"
+      },
+      "newFeatures": {
+        "title": "EssayPass 2.0 发布：全新功能让写作更智能",
+        "excerpt": "介绍我们最新版本的强大功能，包括智能检测、实时协作和增强的AI助手。",
+        "date": "2024年12月5日",
+        "readTime": "3分钟阅读",
+        "category": "产品更新",
+        "author": "产品团队"
+      },
+      "stepByStep": {
+        "title": "从零开始：学术论文写作完整教程",
+        "excerpt": "详细的分步指南，帮助初学者掌握学术写作的基本技能和高级技巧。",
+        "date": "2024年12月1日",
+        "readTime": "12分钟阅读",
+        "category": "教程指南",
+        "author": "王老师"
+      },
+      "aiDetection": {
+        "title": "AI检测工具解析：如何确保内容的原创性",
+        "excerpt": "深入了解AI检测技术的工作原理，以及如何创作既高效又原创的内容。",
+        "date": "2024年11月28日",
+        "readTime": "6分钟阅读",
+        "category": "AI写作",
+        "author": "技术团队"
+      },
+      "researchTips": {
+        "title": "高效研究方法：快速找到可靠的学术资源",
+        "excerpt": "学习如何高效地搜索、评估和使用学术资源，提升研究质量。",
+        "date": "2024年11月25日",
+        "readTime": "7分钟阅读",
+        "category": "学术技巧",
+        "author": "研究团队"
+      }
+    },
+    "readMore": "阅读更多",
+    "noResults": "没有找到相关文章",
+    "searchPlaceholder": "搜索文章..."
+  }
+}

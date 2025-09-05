@@ -1,0 +1,406 @@
+{
+  "nav": {
+    "home": "Home",
+    "writing": "Writing",
+    "blog": "Blog",
+    "about": "About",
+    "history": "History",
+    "login": "login",
+    "register": "Register"
+  },
+  "hero": {
+    "title": "Submit-ready",
+    "subtitle": "not just generated",
+    "description": "Get a submission-ready draft that can work with whitelist systems, a packaged evidence bundle, and easy-to-use editing — so you can submit confidently, not just anxiously.",
+    "cta": "Start your submission now"
+  },
+  "comparison": {
+    "title": "Why \"can write\" ≠ \"ready to submit\"",
+    "problems": {
+      "citations": {
+        "title": "Citations fall under checks",
+        "desc": "AI-generated citations reference papers that don't exist"
+      },
+      "style": {
+        "title": "Matches the style well",
+        "desc": "Generated text doesn't match academic writing conventions"
+      },
+      "obvious": {
+        "title": "Obvious AI generation",
+        "desc": "Content shows clear signs of AI generation"
+      },
+      "formatting": {
+        "title": "Lacks real formatting style",
+        "desc": "Missing proper academic formatting and structure"
+      },
+      "iterations": {
+        "title": "Iterations slow as coal",
+        "desc": "Revisions take too long and lack consistency"
+      }
+    },
+    "solutions": {
+      "citations": {
+        "title": "Authentic literature citations",
+        "desc": "Real, verifiable citations from academic databases"
+      },
+      "alignment": {
+        "title": "Humanized output alignment",
+        "desc": "Content that reads naturally and professionally"
+      },
+      "detection": {
+        "title": "AI detection circumvention",
+        "desc": "Content designed to pass AI detection tools"
+      },
+      "formatting": {
+        "title": "As-you-need formatting",
+        "desc": "Proper academic formatting applied automatically"
+      },
+      "pricing": {
+        "title": "Transparent pricing",
+        "desc": "Clear, upfront pricing with no hidden costs"
+      }
+    }
+  },
+  "features": {
+    "title": "One-click loop, from \"generated\" to \"submittable\"",
+    "realLiterature": {
+      "title": "Real Literature",
+      "desc": "Literature citations based on real academic databases"
+    },
+    "humanStyle": {
+      "title": "Human Style",
+      "desc": "Natural expression that meets academic writing standards"
+    },
+    "smartDetection": {
+      "title": "Smart Detection",
+      "desc": "Content optimization that passes mainstream AI detection tools"
+    },
+    "aiAgent": {
+      "title": "AI Agent Assistance",
+      "desc": "Intelligent assistant helps complete the entire writing process"
+    }
+  },
+  "fastPolished": {
+    "title": "Fast & polished",
+    "description": "Academic writing shouldn't take weeks. Get a submission-ready draft in minutes, not hours. Follow a structured workflow, and use AI to speed up every step from research to final formatting.",
+    "benefits": {
+      "outline": "Start from outline or topic",
+      "draft": "Get a first draft in under 10 minutes",
+      "iterate": "Iterate and refine with AI assistance",
+      "export": "Export in multiple formats"
+    }
+  },
+  "betterValue": {
+    "title": "Better value",
+    "description": "Academic writing services are expensive. A good thesis can cost $500+ with weeks of back-and-forth revisions.",
+    "benefits": {
+      "payOnce": "Pay once, use forever - no subscriptions",
+      "unlimited": "Unlimited revisions and formatting",
+      "noWaiting": "No waiting for human writers",
+      "ownership": "Full ownership of your work"
+    }
+  },
+  "academicSafe": {
+    "title": "Academic-safe by design",
+    "description": "Academic integrity requirements vary, but all institutions require honesty and compliance with their policies.",
+    "features": {
+      "compliance": {
+        "title": "Support full compliance for academic schools, universities",
+        "desc": "Designed to meet institutional requirements"
+      },
+      "transparent": {
+        "title": "Transparent about AI assistance",
+        "desc": "Clear documentation of AI tool usage"
+      },
+      "learning": {
+        "title": "Designed for learning, not cheating",
+        "desc": "Tools that enhance understanding"
+      },
+      "audit": {
+        "title": "Provides full audit trail for review",
+        "desc": "Complete history of changes and sources"
+      },
+      "original": {
+        "title": "Encourages original thought",
+        "desc": "Promotes critical thinking and analysis"
+      },
+      "ethical": {
+        "title": "Follows best practices for ethical AI use",
+        "desc": "Responsible AI implementation"
+      }
+    }
+  },
+  "steps": {
+    "title": "Three steps, easier submission",
+    "step1": {
+      "title": "Quick Draft Generation",
+      "desc": "Enter topic or outline, generate quickly"
+    },
+    "step2": {
+      "title": "Smart Content Optimization",
+      "desc": "AI assistant helps optimize and refine content"
+    },
+    "step3": {
+      "title": "Agent-Assisted Export",
+      "desc": "Multi-format export, ready for submission"
+    },
+    "cta": "Get Started"
+  },
+  "feedback": {
+    "title": "User Feedback",
+    "user1": {
+      "name": "Student Zhang",
+      "school": "Peking University",
+      "comment": "Used CodePass to complete my graduation thesis, it's really great! Not only saved a lot of time, but also high quality."
+    },
+    "user2": {
+      "name": "Professor Li",
+      "school": "Tsinghua University",
+      "comment": "As a supervisor, I appreciate this tool's emphasis on academic integrity, helping students better complete academic writing."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "Does CodePass meet academic integrity requirements?",
+      "answer": "Yes, we strictly follow academic integrity principles, providing transparent AI assistance tools to help students improve writing quality rather than replace thinking."
+    },
+    "q2": {
+      "question": "Can the generated content pass AI detection?",
+      "answer": "Our system is specially optimized, and the generated content has a natural human style that can pass mainstream AI detection tools."
+    },
+    "q3": {
+      "question": "What subject areas are supported?",
+      "answer": "Currently supports multiple subject areas including liberal arts, science, engineering, including but not limited to computer science, economics, literature, etc."
+    }
+  },
+  "comparison_table": {
+    "title": "Feature Comparison",
+    "features": {
+      "realCitations": "Real Literature Citations",
+      "aiDetection": "AI Detection Avoidance",
+      "formatting": "Academic Formatting",
+      "humanReview": "Human Review"
+    },
+    "traditional": "Traditional AI Tools",
+    "codepass": "CodePass"
+  },
+  "cta": {
+    "title": "Start Your Academic Writing Journey",
+    "description": "Join thousands of students and researchers to experience more efficient academic writing",
+    "freeTrial": "Free Trial",
+    "viewPricing": "View Pricing"
+  },
+  "footer": {
+    "description": "Make academic writing simpler, more efficient, and more reliable",
+    "product": "Product",
+    "resources": "Resources",
+    "contact": "Contact Us",
+    "support": "Support",
+    "feedback": "Feedback",
+    "docs": "Documentation",
+    "blog": "Blog",
+    "copyright": "© 2024 CodePass. All rights reserved."
+  },
+  "writing": {
+    "title": "Guaranteed Academic Paper, Worry-Free Pass",
+    "features": {
+      "proQuality": "Pro quality",
+      "verifiedSources": "Verified sources",
+      "chartsEquations": "Charts/Equations",
+      "agentEdits": "Agent edits"
+    },
+    "paperTypes": {
+      "essay": "Essay",
+      "academicEssay": "Academic Essay",
+      "researchPaper": "Research Paper",
+      "caseStudy": "Case Study",
+      "literatureReview": "Literature Review",
+      "analyticalEssay": "Analytical Essay",
+      "compareContrast": "Compare & Contrast Essay",
+      "criticalEssay": "Critical Essay",
+      "argumentativeEssay": "Argumentative Essay",
+      "assignment": "Assignment",
+      "presentationSlides": "Presentation Slides"
+    },
+    "form": {
+      "topic": "Topic",
+      "topicPlaceholder": "Assignment's topic or name",
+      "academicLevel": "Academic level",
+      "levels": {
+        "college": "College",
+        "bachelors": "Bachelor's",
+        "masters": "Master's",
+        "doctorate": "Doctorate"
+      },
+      "wordCount": "Word Count",
+      "language": "Language",
+      "languages": {
+        "englishUS": "English(US)",
+        "englishUK": "English(UK)",
+        "spanish": "Spanish",
+        "chinese": "Chinese"
+      },
+      "requirements": "Requirements",
+      "requirementsPlaceholder": "Enter your specific writing requirements to help improve the paper quality",
+      "writingMode": "Writing Mode",
+      "oneClickWriting": "One-Click Writing",
+      "oneClickDesc": "Generate complete document automatically",
+      "stepByStep": "Step-by-step",
+      "stepByStepDesc": "Work step-by-step with AI guidance",
+      "citationStyle": "Citation Style",
+      "figuresEquations": "Figures & Equations",
+      "includeCharts": "Include Charts&Tables",
+      "includeFormulas": "Include Formulas",
+      "personalVoice": "Personal Voice",
+      "personalVoicePlaceholder": "Give me no less than 1000 words",
+      "start": "start",
+      "support": "Support",
+      "restart": "Restart",
+      "continue": "Start"
+    }
+  },
+  "history": {
+    "title": "Writing History",
+    "noHistory": "No writing history yet",
+    "items": {
+      "pigFarming": {
+        "title": "The Application of AI in the Pig Farming Industry",
+        "type": "Essay",
+        "citation": "APA",
+        "language": "English(US)",
+        "words": "2000 words",
+        "created": "Created2025/8/28 08:20",
+        "id": "ID:123456789",
+        "status": "Step-by-Step"
+      },
+      "coalMaterials": {
+        "title": "Coal Materials in Hunan Region: Market Analysis",
+        "type": "Essay",
+        "citation": "APA",
+        "language": "English(US)",
+        "words": "1800 words",
+        "created": "Created2025/8/26 09:30",
+        "id": "ID:123456788",
+        "status": "One-click"
+      },
+      "digitalLiteracy": {
+        "title": "Digital Literacy and First-year Outcomes",
+        "type": "Essay",
+        "citation": "MLA",
+        "language": "English(US)",
+        "words": "2100 words",
+        "created": "Created2025/8/25 17:30",
+        "id": "ID:123456789",
+        "status": "Step-by-Step"
+      }
+    },
+    "actions": {
+      "openDraft": "Open draft",
+      "downloadBundle": "Download Bundle",
+      "continueWriting": "Continue Writing"
+    },
+    "service": "Customer Service"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn our story",
+    "features": {
+      "title": "Product Features",
+      "aiGuide": {
+        "title": "Our AI Guide:",
+        "description": "AI tutor based on personal knowledge documents, mind maps, translation, summaries, focusing on document learning, making knowledge learning and management easy and simple."
+      },
+      "smartWriting": {
+        "title": "Smart Writing:",
+        "description": "Complete proposals in minutes with standardized formats and professional content. Over 100 writing application templates, supporting personalized writing based on personal knowledge base, AI revolutionizes copywriting."
+      },
+      "verification": {
+        "title": "Verification:",
+        "description": "Achieve networked search and personal knowledge base search, meeting various scenarios' knowledge acquisition and data retrieval needs, ensuring AI response accuracy and personalization."
+      },
+      "dataGuide": {
+        "title": "Data Guide:",
+        "description": "Automatically capture daily key news content, AI summary + copywriting, support one-click addition to personal knowledge base, personalized excerpts based on knowledge base, ensuring you don't miss any valuable information."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Our team graduated from prestigious universities like Peking University, coming from first-tier internet companies like Alibaba and JD.com, with industry-leading algorithm capabilities, product capabilities, and R&D strength, having secured tens of millions in angel round investment."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "businessCooperation": "Business Cooperation: baochenlan@starringshop.com",
+      "customerService": "Contact Phone: 021-67734090",
+      "officeAddress": "Office Address: Floor 1-3, No. 315 Wusong Road, Hongkou District, Shanghai"
+    },
+    "legal": {
+      "icp": "ICP License: 沪ICP备20240491338-1",
+      "publicSecurity": "Public Security: 沪公网安备: 31010402333814号"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest insights and updates",
+    "categories": {
+      "all": "All",
+      "aiWriting": "AI Writing",
+      "academicTips": "Academic Tips",
+      "productUpdates": "Product Updates",
+      "tutorials": "Tutorials"
+    },
+    "posts": {
+      "aiRevolution": {
+        "title": "The AI Writing Revolution: How It's Changing Academic Writing",
+        "excerpt": "Explore how artificial intelligence is reshaping the academic writing landscape, from traditional methods to intelligent solutions.",
+        "date": "December 15, 2024",
+        "readTime": "5 min read",
+        "category": "AI Writing",
+        "author": "Prof. Zhang"
+      },
+      "citationGuide": {
+        "title": "Perfect Citation Guide: APA, MLA, Chicago Formats Explained",
+        "excerpt": "Master the most important citation formats in academic writing to ensure your papers meet academic standards.",
+        "date": "December 10, 2024",
+        "readTime": "8 min read",
+        "category": "Academic Tips",
+        "author": "Dr. Li"
+      },
+      "newFeatures": {
+        "title": "EssayPass 2.0 Release: New Features Make Writing Smarter",
+        "excerpt": "Introducing powerful new features in our latest version, including smart detection, real-time collaboration, and enhanced AI assistant.",
+        "date": "December 5, 2024",
+        "readTime": "3 min read",
+        "category": "Product Updates",
+        "author": "Product Team"
+      },
+      "stepByStep": {
+        "title": "From Zero to Hero: Complete Academic Writing Tutorial",
+        "excerpt": "A detailed step-by-step guide to help beginners master basic skills and advanced techniques in academic writing.",
+        "date": "December 1, 2024",
+        "readTime": "12 min read",
+        "category": "Tutorials",
+        "author": "Teacher Wang"
+      },
+      "aiDetection": {
+        "title": "AI Detection Tools Explained: Ensuring Content Originality",
+        "excerpt": "Deep dive into how AI detection technology works and how to create content that's both efficient and original.",
+        "date": "November 28, 2024",
+        "readTime": "6 min read",
+        "category": "AI Writing",
+        "author": "Tech Team"
+      },
+      "researchTips": {
+        "title": "Efficient Research Methods: Finding Reliable Academic Resources",
+        "excerpt": "Learn how to efficiently search, evaluate, and use academic resources to improve research quality.",
+        "date": "November 25, 2024",
+        "readTime": "7 min read",
+        "category": "Academic Tips",
+        "author": "Research Team"
+      }
+    },
+    "readMore": "Read More",
+    "noResults": "No articles found",
+    "searchPlaceholder": "Search articles..."
+  }
+}
