@@ -5,11 +5,6 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {
-  i18n: {
-    defaultLocale: "zh",
-    locales: ["zh", "en"],
-  },
-};
+const config = {};
 
 export default config;
