@@ -14,6 +14,10 @@
     "description": "Get a submission-ready draft that can work with whitelist systems, a packaged evidence bundle, and easy-to-use editing — so you can submit confidently, not just anxiously.",
     "cta": "Start your submission now"
   },
+  "preview": {
+    "title": "Product Demo Area",
+    "description": "Here you can place product screenshots or demo videos"
+  },
   "comparison": {
     "title": "Why \"can write\" ≠ \"ready to submit\"",
     "problems": {
